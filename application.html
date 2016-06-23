@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Matt's Todo App</title>
+  <link rel="stylesheet" type="text/css" href="bower_components/todomvc-common/base.css">
+</head>
+
+<body>
+  <fieldset class="radiogroup"  id="switchListId" align="center">
+    <input type="radio" name="switch" id="L1" value="l1" checked="checked"/><label for="L1">1 Offs</label>
+    <input type="radio" name="switch" id="L2" value="l2" /><label for="L2">Face 2 Face</label>
+    <input type="radio" name="switch" id="L3" value="l3" /><label for="L3">Blocked</label>
+    <input type="radio" name="switch" id="L4" value="l4" /><label for="L4">Due Date</label>
+  </fieldset>
+  <section id="todoapp">
+    <header id="header">
+      <h1> Todos</h1>
+      <input id="new-todo" placeholder="<add-item>" autofocus>
+    </header>
+    <section id="main">
+      <input id="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark completed</label>
+      <ul id="todo-list"></ul>
+    </section>
+    <footer id="footer">
+      <span id="todo-count"></span>
+      <ul id="filters">
+        <li> <a href="#/">All</a> </li>
+        <li> <a href="#/active">Active</a> </li>
+        <li> <a href="#/completed">Completed</a> </li>
+      </ul>
+      <button id="clear-completed">Clear completed</button>
+    </footer>
+  </section>
+  <footer id="info">
+    <p>Double-Click to edit a todo</p>
+    <p>Created by Matt McNichols</p>
+  </footer>
+  <script src="bower_components/todomvc-common/base.js"></script>
+  <script src="bower_components/director/build/director.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
